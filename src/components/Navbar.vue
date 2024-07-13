@@ -17,17 +17,20 @@
             <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
             <div class="text-sm sm:flex-grow">
                 <routerLink to="/camps" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline mr-4">
-                Camps
+                    Camps
                 </routerLink>
                 <routerLink to="/clinics" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline mr-4">
-                Clinics
+                    Clinics
+                </routerLink>
+                <routerLink to="/training" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline mr-4">
+                    Training
                 </routerLink>
                 <routerLink to="/team" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline">
-                Our Team
+                    Our Team
                 </routerLink>
             </div>
             <div>
-                <a href="#" class="hidden sm:flex text-sm px-4 py-2 leading-none border rounded underline border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 sm:mt-0">Get Started</a>
+                <a href="https://forms.gle/GjhzpZBW2aDXQHVv9" target="_blank" class="hidden sm:flex text-sm px-4 py-2 bg-blue-600 font-bold text-white rounded hover:text-teal hover:bg-blue-400 mt-4 sm:mt-0">Get Started</a>
             </div>
             </div>
         </nav>
