@@ -5,14 +5,15 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <header>
-    <Navbar></Navbar>
-  </header>
- 
-  <RouterView />
+  <div class="flex flex-col">
+    <Navbar class="fixed top-0 left-0 w-full z-50" />
+    <div class="flex-grow overflow-auto pt-20">  
+      <RouterView />
+    </div>
+  </div>
   <section>
-    <Footer></Footer>
-  </section>
+      <Footer/>
+    </section>
 </template>
 
 <style scoped>
@@ -20,7 +21,9 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
+.content {
+  margin-top: [desired height of navbar]px; /* Adjust height as needed */
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
