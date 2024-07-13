@@ -1,5 +1,5 @@
 <template>
-    <div class="font-sans antialiased z-50 border-b border-gray-200" id="app">
+    <div class="font-sans antialiased z-50 border-b border-gray-200 bg-white" id="app">
         <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
             <div class="flex items-center flex-no-shrink mr-6">
                 <routerLink to="/">
