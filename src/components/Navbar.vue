@@ -1,43 +1,34 @@
 <template>
-    <div>
-        <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="/PureSkillsLogo.png" class="h-20" alt="Pure Skills Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Pure Skills Hoops</span>
-                </a>
-                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-
-                    <!-- GET STARTED BUTTON  -->
-                    <!-- REPLACE THE LINK BELOW -->
-                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSd2yYkAHpZRyHyDwfg-2vXBac-SEiN6mSdgZYGHncxu7axOxw/viewform" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</a>
-                    
-                    <!-- <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                        </svg>
-                    </button> -->
-                </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <RouterLink to="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/camps" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Camps</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/clinics" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Clinics</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/training" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Training</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/team" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our Team</RouterLink>
-                        </li>
-                    </ul>
-                </div>
+    <div class="font-sans antialiased z-50 border-b border-gray-200" id="app">
+        <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+            <div class="flex items-center flex-no-shrink mr-6">
+                <routerLink to="/">
+                    <img src="/PureSkillsLogo.png" width="54" height="54" alt="" srcset="">
+                </routerLink>
+                <routerLink to="/">
+                    <span class="font-semibold text-xl tracking-tight">Pure Skills Hoops</span>
+                </routerLink>
+            </div>
+            <div class="block sm:hidden">
+            <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:underline hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+            </div>
+            <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="text-sm sm:flex-grow">
+                <routerLink to="/camps" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline mr-4">
+                Camps
+                </routerLink>
+                <routerLink to="/clinics" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline mr-4">
+                Clinics
+                </routerLink>
+                <routerLink to="/team" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:underline">
+                Our Team
+                </routerLink>
+            </div>
+            <div>
+                <a href="#" class="hidden sm:flex text-sm px-4 py-2 leading-none border rounded underline border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 sm:mt-0">Get Started</a>
+            </div>
             </div>
         </nav>
     </div>
@@ -47,5 +38,15 @@
 import { RouterLink, RouterView } from 'vue-router'
 export default {
     name: 'Navbar',
+    data(){
+        return {
+            open: false,
+        }
+    },
+    methods: {
+        toggle() {
+            this.open = !this.open
+        }
+    }
 }
 </script>
