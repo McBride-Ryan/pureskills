@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 col-start-2 col-span-4 hidden sm:block" >
+                        <div class="p-5 col-start-2 col-span-4 hidden md:block" >
                             <div>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/YK5iWlRJIHw?si=_tHKYoE6SlWwHWQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
@@ -52,7 +52,7 @@
                                 Tom is now an assistant coach with Jesse at Council Rock North where he specializes in player development for the Indians.</div>
                             </div>
                         </div>
-                        <div class="p-5 col-start-2 col-span-4 hidden sm:block" >
+                        <div class="p-5 col-start-2 col-span-4 hidden md:block" >
                             <div>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XVj8XeYjBKc?si=ntYN41k63MMaDbO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        
                             </div>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-5 col-start-2 col-span-4 hidden sm:block" >
+                        <div class="p-5 col-start-2 col-span-4 hidden md:block" >
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/fTgvno56g5U?si=Fuut_vwA1gWdpvrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="p-10">
-        <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 place-items-center">
+        <div class="grid lg:grid-cols-2 gap-4 place-items-center">
             <div class="order-1">
                 <img src="/clinics.png" class="" alt="" srcset="">
             </div>
