@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="overflow-x-auto">
 
         <!-- Camp images -->
 
@@ -42,51 +42,56 @@
 
         <!-- Pricing -->
 
-        <div class="mx-auto max-w-xl grid justify-items-center">
+        <div class="md:mx-auto w-full sm:grid justify-items-center p-4">
             <div>
                 <img src="/pricing.png" alt="" srcset="">
             </div>
-            <p><b>Tuition includes t-shirt, prizes, enthusiastic staff, quality instruction</b></p>
+            <div class="">
+                <p><b>Tuition includes t-shirt, prizes, enthusiastic staff, quality instruction</b></p>
+            </div>
         
             <!-- payment -->
-            <div class="mt-10">
-                <h1 class="text-4xl uppercase font-bold">Payment</h1>
-            </div>
             <div>
-                <p>Venmo - @Jesse-Krasna (please do not select "good" or "service")</p>
-                <p>PayPal - <span class="bg-yellow-100">Click on the drop down button below to see all discounts</span></p>
+                <div class="mt-10">
+                    <h1 class="text-xl uppercase font-bold">Payment</h1>
+                </div>
+                <div>
+                    <p>Venmo - @Jesse-Krasna (please do not select "good" or "service")</p>
+                    <p>PayPal - <span class="bg-yellow-100">Click on the drop down button below to see all discounts</span></p>
+                </div>
+                <div class="mt-4">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="KJ4ACBM8JYVRQ">
+                        <table>
+                        <tbody>
+                            <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Pure Skills Basketball Camp">
+                                Pure Skills Basketball Camp
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <select v-model="selectedCamp" name="os0" class="">
+                                <option value="General Admission">General Admission $275.00 USD</option>
+                                <option value="Sibling Discount">Sibling Discount $249.00 USD</option>
+                                <option value="2 Week Discount Package (save $51)">2 Week Discount Package (save $51) $499.00 USD</option>
+                                <option value="3 Week Discount Package (save $90)">3 Week Discount Package (save $90) $735.00 USD</option>
+                                <option value="4 Week Discount Package (save $160)">4 Week Discount Package (save $160) $940.00 USD</option>
+                                <option value="5 Week Discount Package (save $275)">5 Week Discount Package (save $275) $1,099.00 USD</option>
+                                </select>
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="px-4 py-2 bg-yellow-300 rounded-md mt-2 hover:bg-yellow-200">Add to Cart</button>
+                    </form>
+                    <p class="mt-2 text-xs"><i>*Refund Policy - Full Refunds are honored up to 30 days prior to the event date. Half refunds honored within 30 days prior to event. No refunds given once event begins. Balance paid can be used for future camp events.</i></p>
+                </div>
             </div>
-            <div class="mt-4">
-                <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="KJ4ACBM8JYVRQ">
-                    <table>
-                    <tbody>
-                        <tr>
-                        <td>
-                            <input type="hidden" name="on0" value="Pure Skills Basketball Camp">
-                            Pure Skills Basketball Camp
-                        </td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <select v-model="selectedCamp" name="os0">
-                            <option value="General Admission">General Admission $275.00 USD</option>
-                            <option value="Sibling Discount">Sibling Discount $249.00 USD</option>
-                            <option value="2 Week Discount Package (save $51)">2 Week Discount Package (save $51) $499.00 USD</option>
-                            <option value="3 Week Discount Package (save $90)">3 Week Discount Package (save $90) $735.00 USD</option>
-                            <option value="4 Week Discount Package (save $160)">4 Week Discount Package (save $160) $940.00 USD</option>
-                            <option value="5 Week Discount Package (save $275)">5 Week Discount Package (save $275) $1,099.00 USD</option>
-                            </select>
-                        </td>
-                        </tr>
-                    </tbody>
-                    </table>
-                    <input type="hidden" name="currency_code" value="USD">
-                    <button type="submit" class="px-4 py-2 bg-yellow-300 rounded-md mt-2 hover:bg-yellow-200">Add to Cart</button>
-                </form>
-                <p class="mt-2 text-xs"><i>*Refund Policy - Full Refunds are honored up to 30 days prior to the event date. Half refunds honored within 30 days prior to event. No refunds given once event begins. Balance paid can be used for future camp events.</i></p>
-            </div>
+            
 
             <!-- regristration  -->
             <div class="mt-10">
@@ -98,7 +103,7 @@
             </div>
             <!-- gallery -->
             <div class="mt-8 p-8 rounded-lg border">
-                <div class="grid grid-cols-3 md:grid-cols-2 gap-4">
+                <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
                     <div class="overflow-hidden">
                         <img class="h-auto max-w-full rounded-lg hover:transform hover:scale-110 transition duration-300" src="/gallery1.png" alt="">
                     </div>

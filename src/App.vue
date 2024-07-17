@@ -5,15 +5,15 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div class="overflow-x-hidden">
+    <div class="flex flex-col">
     <Navbar class="fixed top-0 left-0 w-full z-50" />
     <div class="flex-grow overflow-auto pt-20">  
-      <RouterView />
+      <RouterView class="overflow-x-hidden"/>
     </div>
   </div>
-  <section>
       <Footer/>
-    </section>
+  </div>
 </template>
 
 <style scoped>

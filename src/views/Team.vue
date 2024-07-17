@@ -5,20 +5,17 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Our Team
                 </h2>
-                <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-                    Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind
-                </p>
             </div>
             <div class="space-y-4">
                 <!-- Card -->
                 <div class="bg-gray-50 rounded-lg shadow">
-                    <div class="flex flex-row">
-                        <div class="basis-1/3">
+                    <div class="grid sm:grid-cols-3 grid-cols-1">
+                        <div class="">
                             <div class="p-5 ">
                                 <img src="/jkrasna.png" class="rounded-md"></img>
                             </div>
                         </div>
-                        <div class="basis-2/3">
+                        <div class="sm:col-span-2">
                             <div class="p-5">
                                 <div class="text-xl font-bold tracking-tight text-gray-900">Jesse Krasna</div>    
                                 <div class="text-md text-gray-500">Head Instructor</div>
@@ -30,22 +27,23 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-5 flex flex-row justify-center" >
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YK5iWlRJIHw?si=_tHKYoE6SlWwHWQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="p-5 col-start-2 col-span-4 hidden sm:block" >
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YK5iWlRJIHw?si=_tHKYoE6SlWwHWQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <!-- Card -->
                 <div class="bg-gray-50 rounded-lg shadow">
-                    <div class="flex flex-row">
-                        <div class="basis-1/3">
+                    <div class="grid sm:grid-cols-3 grid-cols-1">
+                        <div class="">
                             <div class="p-5 ">
                                 <img src="/ttownsend.png" class="rounded-md"></img>
                             </div>
                         </div>
-                        <div class="basis-2/3">
+                        <div class="sm:col-span-2">
                             <div class="p-5">
                                 <div class="text-xl font-bold tracking-tight text-gray-900">Tom Townsend</div>    
                                 <!-- <div class="text-md text-gray-500">Head Instructor</div> -->
@@ -54,21 +52,22 @@
                                 Tom is now an assistant coach with Jesse at Council Rock North where he specializes in player development for the Indians.</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-5 flex flex-row justify-center" >
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XVj8XeYjBKc?si=ntYN41k63MMaDbO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
+                        <div class="p-5 col-start-2 col-span-4 hidden sm:block" >
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XVj8XeYjBKc?si=ntYN41k63MMaDbO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="bg-gray-50 rounded-lg shadow">
-                    <div class="flex flex-row">
-                        <div class="basis-1/3">
+                    <div class="grid sm:grid-cols-3 grid-cols-1">
+                        <div class="">
                             <div class="p-5 ">
                                 <img src="/bbirkhead.png" class="rounded-md"></img>
                             </div>
                         </div>
-                        <div class="basis-2/3">
+                        <div class="sm:col-span-2">
                             <div class="p-5">
                                 <div class="text-xl font-bold tracking-tight text-gray-900">Bridget Birkhead</div>    
                                 <!-- <div class="text-md text-gray-500">Head Instructor</div> -->
@@ -81,20 +80,20 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-5 flex flex-row justify-center" >
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fTgvno56g5U?si=Fuut_vwA1gWdpvrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="p-5 col-start-2 col-span-4 hidden sm:block" >
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fTgvno56g5U?si=Fuut_vwA1gWdpvrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
                 <!-- Card -->
                 <div class="bg-gray-50 rounded-lg shadow">
-                    <div class="flex flex-row">
-                        <div class="basis-1/3">
+                    <div class="grid sm:grid-cols-3 grid-cols-1">
+                        <div class="">
                             <div class="p-5 ">
                                 <img src="/zkumor.png" class="rounded-md"></img>
                             </div>
                         </div>
-                        <div class="basis-2/3">
+                        <div class="sm:col-span-2">
                             <div class="p-5">
                                 <div class="text-xl font-bold tracking-tight text-gray-900">Zak Kumor</div>    
                                 <!-- <div class="text-md text-gray-500">Head Instructor</div> -->
@@ -112,13 +111,13 @@
                 
                 <!-- Card -->
                 <div class="bg-gray-50 rounded-lg shadow">
-                    <div class="flex flex-row">
-                        <div class="basis-1/3">
+                    <div class="grid sm:grid-cols-3 grid-cols-1">
+                        <div class="">
                             <div class="p-5 ">
                                 <img src="/tguers.png" class="rounded-md"></img>
                             </div>
                         </div>
-                        <div class="basis-2/3">
+                        <div class="sm:col-span-2">
                             <div class="p-5">
                                 <div class="text-xl font-bold tracking-tight text-gray-900">Tim Guers</div>    
                                 <!-- <div class="text-md text-gray-500">Head Instructor</div> -->
